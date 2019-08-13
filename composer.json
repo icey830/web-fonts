@@ -1,5 +1,5 @@
 {
-    "name": "finesse/web-fonts-repository",
+    "name": "finesse/web-fonts",
     "type": "project",
     "description": "A simple webfont hosting. Google Fonts alternative for your own fonts.",
     "keywords": ["webfonts", "font", "css", "hosting", "repository", "Google Fonts"],
