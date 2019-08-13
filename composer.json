@@ -1,0 +1,45 @@
+{
+    "name": "finesse/web-fonts-repository",
+    "type": "project",
+    "description": "A simple webfont hosting. Google Fonts alternative for your own fonts.",
+    "keywords": ["webfonts", "font", "css", "hosting", "repository", "Google Fonts"],
+    "homepage": "https://github.com/Finesse/web-fonts-repository",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Surgie Finesse",
+            "email": "finesserus@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "psr/log": "^1.0",
+        "apix/log": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2",
+        "mockery/mockery": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "start": "php -S 0.0.0.0:8080 -t public public/index.php",
+        "test": "phpunit",
+        "post-create-project-cmd": [
+            "cp config/settings-local.php.example config/settings-local.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

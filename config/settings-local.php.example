@@ -1,0 +1,14 @@
+<?php
+
+/*
+ * An example of settings that vary on different servers. To change the settings you should copy this file to
+ * config/settings-local.php and edit the file.
+ */
+
+return [
+    'displayErrorDetails' => true,
+    'logger' => [
+        'level' => \Psr\Log\LogLevel::DEBUG
+    ],
+    'fonts' => [],
+];
